@@ -59,7 +59,7 @@ nav ul li a{
     padding: 10px;
     border-radius: 5px;
     border: 2px solid black;
-    /* transition: transform 0.3s ease,box-shadow 0.3s ease; */
+    
 }
 
 .header-text{
@@ -90,6 +90,17 @@ nav ul li a{
     color: #091937;
 }
 
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: linear-gradient(86.3deg, rgb(1, 33, 51) 3.6%, rgb(1, 29, 103) 87.6%);
+    color: #23437d;
+    margin-top: auto;
+    position: relative;
+}
+
 .right-image{
     width: 400px;
     height: auto;
@@ -99,18 +110,14 @@ nav ul li a{
     margin-bottom: 150px;
     border:3px solid #091937;
     border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+   
+
   
 }
 
 
-.footer-container{
-    display: flex;
-    justify-content:center;
-    padding: 15px;
-    background: linear-gradient(86.3deg, rgb(1, 33, 51) 3.6%, rgb(1, 29, 103) 87.6%);
-    color: #23437d;
-    margin-top: auto;
-}
+
 
 .sidebar{
    
@@ -118,7 +125,7 @@ nav ul li a{
         position: absolute;
             /* Allows it to stay in the document flow */
         left: 2px;
-            /* Aligns the sidebar to the left side of the page */
+            /* Aligns the sidebar to the left side of the page */ 
         top: 30px;
             /* Adjusts the top position if needed */
         width: 60px;
@@ -187,11 +194,7 @@ nav ul li a{
 }
 
 
-.row{
-   
-}
-
-about-col-1{
+.about-col-1{
     text-align: center;
 }
 
@@ -232,6 +235,7 @@ about-col-1{
 
 .sub-context{
    text-align:center;
+   line-height: 1.2;
 }
 
 .tab-contents {
@@ -293,7 +297,7 @@ about-col-1{
     /* Font size for list items */
     margin: 5px 0;
     /* Space between list items */
-    color: #091937;
+    color: #fafafa;
     /* Text color */
 }
 
@@ -340,6 +344,13 @@ about-col-1{
     /* Transition effect */
 }
 
+
+.projects h1,
+.blogs h1 {
+    color: #091937;
+    
+}
+
 .project-item:hover,
 .blog-item:hover {
     transform: translateY(-5px) scale(1.05);
@@ -358,100 +369,165 @@ about-col-1{
     /* Removes any default margin */
 }
 
+.project-item a,
+.blog-item a{
+    text-decoration: none;
+    color: #104195;
+    padding-left: 5px;
+   
+}
 
+.project-item a:hover,
+.blog-item a:hover{
+    color: #ff0000;
+}
 
+.project-item span,
+.blog-item span{
+    font-weight: bold;
+}
 
+.project-item h2,
+.blog-item h2{
+    color: #133574;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.project-item p,
+.blog-item p{
+   line-height: 1.2;
+}
 
 
 /* ---contact--- */
-
-.contact-left{
-    flex-basis: 35%;
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    min-height: calc(100vh - 150px);
 }
 
-.contact-right{
-    flex-basis: 60%;
+.contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    /* Width for the overall container */
+    max-width: 1280px;
+    /* Maximum width for larger screens */
+    background: transparent;
+    box-shadow: none;
+    
 }
 
-.contact-left p{
-    margin-top: 30px;
+.contact-left,
+.contact-right {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.contact-left p i{
-    color: #ff004f;
-    margin: 15px;
+.contact-left {
+    width: 40%;
+    /* Sets a consistent width for the left column */
+}
+
+.contact-right {
+    width: 55%;
+    /* Sets a consistent width for the right column */
+}
+
+/* Contact Info & Social Icons */
+.contact-left h1 {
+    font-size: 30px;
+    color: #fafafa;
+}
+
+.contact-left p,
+.contact-left .social-icons a {
+    color: #f4f4f5;
+    margin: 18px 0;
     font-size: 25px;
 }
 
-.social-icons{
-    margin-top:30px;
+.social-icons {
+    display: flex;
+    gap: 15px;
 }
 
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
+.social-icons a {
+    font-size: 24px;
+    transition: transform 0.3s;
 }
 
-.social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
+.social-icons a:hover {
+    color: #091937;
+    transform: scale(1.2);
 }
 
-.btn.btn2{
-    display: inline-block;
-    background: #ff004f;
-    border: orchid;
+/* Contact Form */
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #c3e3ff;
+    color: #333;
+}
+
+.contact-right button {
+    padding: 12px;
+    background-color: #007bff;
     color: #fff;
-    border-radius: 2px;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-.contact-right form{
-    width: 100%;
-
-}
-
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626; ;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-    
-
-}
-
-form .btn2{
-    font-size: 18px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+.contact-right button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.download_btn{
+    text-decoration: none;
+    color: rgb(238, 238, 239);
+    background-color: #007bff;
+    padding: 8px;
+    margin-top:10px;
+    border-radius: 5px;
+
+}
+
+.download{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.download_btn:hover{
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -477,15 +553,12 @@ form .btn2{
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    /* color: white;
-    box-shadow: 0 0 20px #eee; */
     border-radius: 10px;
     display: block;
 }
 
 .btn-grad:hover {
     background-position: right center;
-    /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
 }
