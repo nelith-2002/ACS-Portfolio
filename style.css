@@ -271,7 +271,7 @@ about-col-1{
 .education-container h2 {
     font-size: 24px;
     /* Font size for headings */
-    color: #f4fa41;
+    color: #4178fa;
     /* Color for headings */
     margin-bottom: 10px;
     /* Space below headings */
@@ -293,8 +293,69 @@ about-col-1{
     /* Font size for list items */
     margin: 5px 0;
     /* Space between list items */
-    color: #fff;
+    color: #091937;
     /* Text color */
+}
+
+
+/* ----Projects & Blogs---- */
+
+.p_b_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    /* Adjust padding for spacing */
+}
+
+.projects,
+.blogs {
+    background: rgba(255, 255, 255, 0.1);
+    /* Background for visibility */
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 40px;
+    /* Space between containers */
+    width: 80%;
+    /* Container width */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+}
+
+.project-item,
+.blog-item {
+    margin: 15px 0;
+    /* Space between items */
+    padding: 15px;
+    /* Padding inside each item */
+    border-radius: 5px;
+    /* Rounded corners for items */
+    background: rgba(255, 255, 255, 0.1);
+    /* Item background */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Transition effect */
+}
+
+.project-item:hover,
+.blog-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    /* Pop-up effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    /* Enhanced shadow on hover */
+}
+
+.projects ul li,
+.blogs ul li {
+    list-style-type: none;
+    /* Removes bullets */
+    padding-left: 0;
+    /* Removes left padding */
+    margin: 0;
+    /* Removes any default margin */
 }
 
 
@@ -316,9 +377,6 @@ about-col-1{
 
 
 
-
-
-/* ----projects&blogs---- */
 
 
 
