@@ -6,7 +6,6 @@
 }
 
 body{
-    background: #080808;
     color: #fff; 
     background-image: linear-gradient(86.3deg, rgba(0, 119, 182, 1) 3.6%, rgba(8, 24, 68, 1) 87.6%);
     
@@ -62,6 +61,41 @@ nav ul li a{
     
 }
 
+/* ----button styles from Gradient.io---- */
+
+.btn-grad {
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%)
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%, #1e3c72 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ----header section aligments---- */
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -90,6 +124,7 @@ nav ul li a{
     color: #091937;
 }
 
+/* ----footer section aligments---- */
 
 .footer-container {
     display: flex;
@@ -116,30 +151,23 @@ nav ul li a{
   
 }
 
-
-
-
 .sidebar{
-   
-
-        position: absolute;
-            /* Allows it to stay in the document flow */
-        left: 2px;
-            /* Aligns the sidebar to the left side of the page */ 
-        top: 30px;
-            /* Adjusts the top position if needed */
-        width: 60px;
-        height: auto;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #f4fa41;
-        padding: 20px 0;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        margin-left: 8px;
-        margin-top: 130px;
-    
+    position: absolute;
+        /* Allows it to stay in the document flow */
+    left: 2px;
+        /* Aligns the sidebar to the left side of the page */ 
+    top: 30px;
+        /* Adjusts the top position if needed */
+    width: 60px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f4fa41;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-top: 130px;  
 }
-
 .sidebar-container {
     /* margin-bottom: 50px;
     margin-top: 40px; */
@@ -160,13 +188,6 @@ nav ul li a{
 }
 
 .sidebar-links a{
-    /* text-decoration: none;
-    color: #f4fa41;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.5s;
-    transition: transform 0.3s ease; */
-
     text-decoration: none;
     color: #104195;
     font-size: 24px;
@@ -520,229 +541,143 @@ form textarea {
 }
 
 
+
+
+
 /* Media Queries for Responsive Design */
 
 /* Small Devices (Mobile, 480px and below) */
 @media (max-width: 480px) {
     header {
-        padding: 10px;
-        /* Less padding for the header */
+        padding: 10px; /* Less padding for the header */
     }
 
     nav {
-        flex-direction: column;
-        /* Stack nav items vertically */
-        align-items: flex-start;
-        /* Align items to the start */
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-start; /* Align items to the start */
     }
 
     nav ul {
-        flex-direction: column;
-        /* Stack navigation links */
-        padding: 0;
-        /* Remove padding for mobile */
-        margin-top: 10px;
-        /* Add space above */
+        flex-direction: column; /* Stack navigation links */
+        padding: 0; /* Remove padding for mobile */
+        margin-top: 10px; /* Add space above */
     }
 
     nav ul li {
-        margin: 10px 0;
-        /* Space between navigation items */
+        margin: 10px 0; /* Space between navigation items */
     }
 
     .logo {
-        max-width: 120px;
-        /* Adjust logo size for mobile */
+        max-width: 120px; /* Adjust logo size for mobile */
     }
 
     .container {
-        padding: 10px;
-        /* Less padding for content */
+        padding: 10px; /* Less padding for content */
     }
 
-    .projects,
-    .blogs {
-        margin: 10px 0;
-        /* Less margin */
+    .projects, .blogs {
+        margin: 10px 0; /* Less margin */
     }
 
-    .project-item,
-    .blog-item,
-    .contact-left,
-    .contact-right {
-        margin: 10px 0;
-        /* Space between items */
-        padding: 10px;
-        /* Less padding in items */
+    .project-item, .blog-item, .contact-left, .contact-right {
+        margin: 10px 0; /* Space between items */
+        padding: 10px; /* Less padding in items */
     }
 
     .contact-form-container {
-        flex-direction: column;
-        /* Stack contact sections vertically */
-        padding: 10px;
-        /* Less padding for mobile */
+        flex-direction: column; /* Stack contact sections vertically */
+        padding: 10px; /* Less padding for mobile */
     }
 
-    .contact-left,
-    .contact-right {
-        width: 100%;
-        /* Full width on mobile */
-        padding: 10px;
-        /* Less padding for mobile */
+    .contact-left, .contact-right {
+        width: 100%; /* Full width on mobile */
+        padding: 10px; /* Less padding for mobile */
     }
 
     .field {
-        font-size: 1em;
-        /* Adjust input size */
-        padding: 8px;
-        /* Adjust input padding */
+        font-size: 1em; /* Adjust input size */
+        padding: 8px; /* Adjust input padding */
     }
 
     .btn {
-        padding: 10px;
-        /* Adjust button padding */
-        width: 100%;
-        /* Full width buttons */
+        padding: 10px; /* Adjust button padding */
+        width: 100%; /* Full width buttons */
     }
 
     .social-icons a {
-        margin-right: 10px;
-        /* Space between social icons */
-        font-size: 1.5em;
-        /* Larger icons for touch targets */
+        margin-right: 10px; /* Space between social icons */
+        font-size: 1.5em; /* Larger icons for touch targets */
     }
 }
 
 /* Medium Devices (Tablets, 481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     header {
-        padding: 15px;
-        /* Standard header padding */
+        padding: 15px; /* Standard header padding */
     }
 
     nav ul {
-        flex-direction: row;
-        /* Horizontal layout for tablets */
+        flex-direction: row; /* Horizontal layout for tablets */
     }
 
     nav ul li {
-        margin-left: 15px;
-        /* Space between navigation items */
+        margin-left: 15px; /* Space between navigation items */
     }
 
     .logo {
-        max-width: 130px;
-        /* Adjust logo size for tablet */
+        max-width: 130px; /* Adjust logo size for tablet */
     }
 
     .container {
-        padding: 15px;
-        /* Standard padding for tablet */
+        padding: 15px; /* Standard padding for tablet */
     }
 
     .contact-form-container {
-        flex-direction: row;
-        /* Side-by-side for tablet */
-        padding: 15px;
-        /* Standard padding */
+        flex-direction: row; /* Side-by-side for tablet */
+        padding: 15px; /* Standard padding */
     }
 
-    .contact-left,
-    .contact-right {
-        flex: 1;
-        /* Equal width for contact sections */
-        padding: 15px;
-        /* Standard padding */
+    .contact-left, .contact-right {
+        flex: 1; /* Equal width for contact sections */
+        padding: 15px; /* Standard padding */
     }
 
-    .project-item,
-    .blog-item {
-        margin: 15px 0;
-        /* Space between items */
-        padding: 15px;
-        /* Standard padding for items */
+    .project-item, .blog-item {
+        margin: 15px 0; /* Space between items */
+        padding: 15px; /* Standard padding for items */
     }
 }
 
 /* Large Devices (Desktops, 769px and above) */
 @media (min-width: 769px) {
     .container {
-        max-width: 1200px;
-        /* Maintain max width for larger screens */
-        padding: 20px;
-        /* Standard padding */
+        max-width: 1200px; /* Maintain max width for larger screens */
+        padding: 20px; /* Standard padding */
     }
 
-    .projects,
-    .blogs {
-        margin: 20px 0;
-        /* More margin */
+    .projects, .blogs {
+        margin: 20px 0; /* More margin */
     }
 
-    .project-item,
-    .blog-item {
-        margin: 20px 0;
-        /* More space between items */
-        padding: 20px;
-        /* More padding in items */
+    .project-item, .blog-item {
+        margin: 20px 0; /* More space between items */
+        padding: 20px; /* More padding in items */
     }
 }
 
 /* Extra Large Devices (Wider screens, 1200px and above) */
 @media (min-width: 1200px) {
     .container {
-        max-width: 1200px;
-        /* Maintain max width for larger screens */
-        padding: 20px;
-        /* Standard padding */
+        max-width: 1200px; /* Maintain max width for larger screens */
+        padding: 20px; /* Standard padding */
     }
 
     nav ul {
-        justify-content: flex-end;
-        /* Align navigation to the right */
+        justify-content: flex-end; /* Align navigation to the right */
     }
 
-    .project-item,
-    .blog-item {
-        margin: 25px 0;
-        /* More space between items */
+    .project-item, .blog-item {
+        margin: 25px 0; /* More space between items */
     }
 }
 
-
-
-
-
-
-
-
-.btn-grad {
-    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)
-}
-
-
-.btn-grad {
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%)
-}
-
-
-.btn-grad {
-    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%, #1e3c72 100%)
-}
-
-.btn-grad {
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    border-radius: 10px;
-    display: block;
-}
-
-.btn-grad:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
-}
