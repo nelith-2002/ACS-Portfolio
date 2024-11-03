@@ -38,7 +38,7 @@ nav{
 }
 
 .logo{
-    width: 180px;
+    width: 150px;
     margin-left: 50px;
 }
 
@@ -520,10 +520,194 @@ form textarea {
 }
 
 
+/* Media Queries for Responsive Design */
 
+/* Small Devices (Mobile, 480px and below) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        /* Less padding for the header */
+    }
 
+    nav {
+        flex-direction: column;
+        /* Stack nav items vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
 
+    nav ul {
+        flex-direction: column;
+        /* Stack navigation links */
+        padding: 0;
+        /* Remove padding for mobile */
+        margin-top: 10px;
+        /* Add space above */
+    }
 
+    nav ul li {
+        margin: 10px 0;
+        /* Space between navigation items */
+    }
+
+    .logo {
+        max-width: 120px;
+        /* Adjust logo size for mobile */
+    }
+
+    .container {
+        padding: 10px;
+        /* Less padding for content */
+    }
+
+    .projects,
+    .blogs {
+        margin: 10px 0;
+        /* Less margin */
+    }
+
+    .project-item,
+    .blog-item,
+    .contact-left,
+    .contact-right {
+        margin: 10px 0;
+        /* Space between items */
+        padding: 10px;
+        /* Less padding in items */
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+        /* Stack contact sections vertically */
+        padding: 10px;
+        /* Less padding for mobile */
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        /* Full width on mobile */
+        padding: 10px;
+        /* Less padding for mobile */
+    }
+
+    .field {
+        font-size: 1em;
+        /* Adjust input size */
+        padding: 8px;
+        /* Adjust input padding */
+    }
+
+    .btn {
+        padding: 10px;
+        /* Adjust button padding */
+        width: 100%;
+        /* Full width buttons */
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+        /* Space between social icons */
+        font-size: 1.5em;
+        /* Larger icons for touch targets */
+    }
+}
+
+/* Medium Devices (Tablets, 481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 15px;
+        /* Standard header padding */
+    }
+
+    nav ul {
+        flex-direction: row;
+        /* Horizontal layout for tablets */
+    }
+
+    nav ul li {
+        margin-left: 15px;
+        /* Space between navigation items */
+    }
+
+    .logo {
+        max-width: 130px;
+        /* Adjust logo size for tablet */
+    }
+
+    .container {
+        padding: 15px;
+        /* Standard padding for tablet */
+    }
+
+    .contact-form-container {
+        flex-direction: row;
+        /* Side-by-side for tablet */
+        padding: 15px;
+        /* Standard padding */
+    }
+
+    .contact-left,
+    .contact-right {
+        flex: 1;
+        /* Equal width for contact sections */
+        padding: 15px;
+        /* Standard padding */
+    }
+
+    .project-item,
+    .blog-item {
+        margin: 15px 0;
+        /* Space between items */
+        padding: 15px;
+        /* Standard padding for items */
+    }
+}
+
+/* Large Devices (Desktops, 769px and above) */
+@media (min-width: 769px) {
+    .container {
+        max-width: 1200px;
+        /* Maintain max width for larger screens */
+        padding: 20px;
+        /* Standard padding */
+    }
+
+    .projects,
+    .blogs {
+        margin: 20px 0;
+        /* More margin */
+    }
+
+    .project-item,
+    .blog-item {
+        margin: 20px 0;
+        /* More space between items */
+        padding: 20px;
+        /* More padding in items */
+    }
+}
+
+/* Extra Large Devices (Wider screens, 1200px and above) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        /* Maintain max width for larger screens */
+        padding: 20px;
+        /* Standard padding */
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        /* Align navigation to the right */
+    }
+
+    .project-item,
+    .blog-item {
+        margin: 25px 0;
+        /* More space between items */
+    }
+}
 
 
 
