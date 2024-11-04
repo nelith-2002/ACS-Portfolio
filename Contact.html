@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            <a href="MainPage.html"><img src="img/Nelith_Nethsanda__4_-removebg-preview.png" class="logo"></a>
+            <a href="MainPage.html"><img src="img/logo.png" class="logo" alt="logo with name Nelith Nethsanda"></a>
             <ul>
                 <li><a href="MainPage.html" class="btn-grad">Home</a></li>
                 <li><a href="About.html" class="btn-grad">About</a></li>
@@ -20,10 +20,10 @@
             </ul>
         </nav>
     </header>
-    <section id="contact">
+    <div id="contact">
         <div class="contact-form-container">
                 <section class="contact-left">
-                    <h1 class="sub-title">Contact<span>  Me</span></h1>
+                    <h2 class="sub-title">Contact<span>  Me</span></h2>
                     <div class="contact-info">
                         <p class="contact-info-mail"><i class="fa-solid fa-paper-plane"></i> nelithnethsanda2002@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i> 0701103551</p>
@@ -39,19 +39,19 @@
                        
                     </div>
                 </section>
-                <section class="contact-right">
+                <div class="contact-right">
                    <form action="https://formspree.io/f/meoqawgv" method="POST" >
                           <label for="name">Name</label>
-                          <input type="text" name="name" class="field" placeholder="Your Name" required>
+                          <input type="text" name="name" id="name" placeholder="Your Name" required>
                           <label for="email">Email</label>
-                          <input type="email" name="email" class="field" placeholder="Your Email" required>
-                          <label for="Message">Message</label>
-                          <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                          <input type="email" name="email" id="email" placeholder="Your Email" required>
+                          <label for="message">Message</label>
+                          <textarea  id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
                           <button type="submit" class="btn btn2">Submit</button>
                    </form>
-                </section>
+                </div>
         </div>
-    </section>
+    </div>
     <footer>
         <div class="footer-container">
             <p>Copyrights <i class="fa-regular fa-copyright"></i> 2024 Nelith Nethsanda</p>
