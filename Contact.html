@@ -25,7 +25,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact<span>  Me</span></h1>
                     <div class="contact-info">
-                        <p><i class="fa-solid fa-paper-plane"></i> nelithnethsanda2002@gmail.com</p>
+                        <p class="contact-info-mail"><i class="fa-solid fa-paper-plane"></i> nelithnethsanda2002@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i> 0701103551</p>
                         <div class="social-icons">
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -40,9 +40,12 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                   <form>
+                   <form action="https://formspree.io/f/meoqawgv" method="POST" >
+                          <label for="name">Name</label>
                           <input type="text" name="name" class="field" placeholder="Your Name" required>
+                          <label for="email">Email</label>
                           <input type="email" name="email" class="field" placeholder="Your Email" required>
+                          <label for="Message">Mesage</label>
                           <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                           <button type="submit" class="btn btn2">Submit</button>
                    </form>

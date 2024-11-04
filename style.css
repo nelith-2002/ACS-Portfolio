@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1500px;
     height: 100vh;
     padding: 0 50px;
     margin-left: 20px;
@@ -26,6 +26,8 @@ body{
     flex: 1;
     margin-right: 20px;
     margin-bottom: 250px;
+    margin-top: 20%;
+    padding: 50px;
 }
 
 nav{
@@ -38,6 +40,7 @@ nav{
 
 .logo{
     width: 150px;
+    height: auto;
     margin-left: 50px;
 }
 
@@ -64,7 +67,15 @@ nav ul li a{
 /* ----button styles from Gradient.io---- */
 
 .btn-grad {
-    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
 }
 
 
@@ -107,12 +118,13 @@ nav ul li a{
 }
 
 .header-text h1{
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 3rem;
     font-weight: 20px;
 }
 
 .header-text p{
-    font-size:40px ;
+    font-size:40px;
 }
 
 .header-text p span{
@@ -447,6 +459,10 @@ nav ul li a{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    flex: 1;
+        /* Allow equal growth/shrinkage */
+    margin: 10px;
 }
 
 .contact-left {
@@ -469,7 +485,7 @@ nav ul li a{
 .contact-left .social-icons a {
     color: #f4f4f5;
     margin: 18px 0;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .social-icons {
@@ -516,6 +532,11 @@ form textarea {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+
+
+
+
+
 .contact-right button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
@@ -543,141 +564,173 @@ form textarea {
 
 
 
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .logo {
+        width: 120px;
+        margin-left: 30px;
+    }
+}
 
-/* Media Queries for Responsive Design */
+/* Mobile screens */
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+        margin-left: 20px;
+    }
+}
 
-/* Small Devices (Mobile, 480px and below) */
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .header-text {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-text p {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Very small mobile screens */
 @media (max-width: 480px) {
-    header {
-        padding: 10px; /* Less padding for the header */
+    .header-text h1 {
+        font-size: 1.5rem;
     }
 
-    nav {
-        flex-direction: column; /* Stack nav items vertically */
-        align-items: flex-start; /* Align items to the start */
+    .header-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 40px;
+        padding: 10px 0;
+    }
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .right-image {
+        width: 300px;
+        max-height: 400px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .right-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet and mobile screens */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+
+    .skills-container,
+    .education-container {
+        width: 80%;
     }
 
-    nav ul {
-        flex-direction: column; /* Stack navigation links */
-        padding: 0; /* Remove padding for mobile */
-        margin-top: 10px; /* Add space above */
+    .projects,
+    .blogs {
+        width: 90%;
     }
+}
 
-    nav ul li {
-        margin: 10px 0; /* Space between navigation items */
+/* Mobile screens */
+@media (max-width: 768px) {
+
+    .skills-container,
+    .education-container,
+    .projects,
+    .blogs {
+        width: 100%;
     }
+}
 
-    .logo {
-        max-width: 120px; /* Adjust logo size for mobile */
+/* Very small mobile screens */
+@media (max-width: 480px) {
+
+    .skills-container,
+    .education-container,
+    .projects,
+    .blogs {
+        width: 100%;
     }
+}
 
-    .container {
-        padding: 10px; /* Less padding for content */
-    }
 
-    .projects, .blogs {
-        margin: 10px 0; /* Less margin */
-    }
-
-    .project-item, .blog-item, .contact-left, .contact-right {
-        margin: 10px 0; /* Space between items */
-        padding: 10px; /* Less padding in items */
-    }
-
+/* Tablet screens */
+@media (max-width: 768px) {
     .contact-form-container {
-        flex-direction: column; /* Stack contact sections vertically */
-        padding: 10px; /* Less padding for mobile */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .contact-left, .contact-right {
-        width: 100%; /* Full width on mobile */
-        padding: 10px; /* Less padding for mobile */
-    }
-
-    .field {
-        font-size: 1em; /* Adjust input size */
-        padding: 8px; /* Adjust input padding */
-    }
-
-    .btn {
-        padding: 10px; /* Adjust button padding */
-        width: 100%; /* Full width buttons */
-    }
-
-    .social-icons a {
-        margin-right: 10px; /* Space between social icons */
-        font-size: 1.5em; /* Larger icons for touch targets */
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
-/* Medium Devices (Tablets, 481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-    header {
-        padding: 15px; /* Standard header padding */
+@media (max-width: 768px) {
+    .contact-info-mail {
+        font-size: 1rem;
     }
 
-    nav ul {
-        flex-direction: row; /* Horizontal layout for tablets */
-    }
-
-    nav ul li {
-        margin-left: 15px; /* Space between navigation items */
-    }
-
-    .logo {
-        max-width: 130px; /* Adjust logo size for tablet */
-    }
-
-    .container {
-        padding: 15px; /* Standard padding for tablet */
-    }
-
-    .contact-form-container {
-        flex-direction: row; /* Side-by-side for tablet */
-        padding: 15px; /* Standard padding */
-    }
-
-    .contact-left, .contact-right {
-        flex: 1; /* Equal width for contact sections */
-        padding: 15px; /* Standard padding */
-    }
-
-    .project-item, .blog-item {
-        margin: 15px 0; /* Space between items */
-        padding: 15px; /* Standard padding for items */
+    .contact-info-mail i {
+        font-size: 1.2rem;
     }
 }
 
-/* Large Devices (Desktops, 769px and above) */
-@media (min-width: 769px) {
-    .container {
-        max-width: 1200px; /* Maintain max width for larger screens */
-        padding: 20px; /* Standard padding */
+@media (max-width: 480px) {
+    .contact-info-mail {
+        font-size: 0.9rem;
+        text-align: center;
+        flex-direction: column;
     }
 
-    .projects, .blogs {
-        margin: 20px 0; /* More margin */
-    }
-
-    .project-item, .blog-item {
-        margin: 20px 0; /* More space between items */
-        padding: 20px; /* More padding in items */
+    .contact-info-mail i {
+        font-size: 1rem;
+        margin-right: 0;
+        margin-bottom: 5px;
     }
 }
-
-/* Extra Large Devices (Wider screens, 1200px and above) */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1200px; /* Maintain max width for larger screens */
-        padding: 20px; /* Standard padding */
-    }
-
-    nav ul {
-        justify-content: flex-end; /* Align navigation to the right */
-    }
-
-    .project-item, .blog-item {
-        margin: 25px 0; /* More space between items */
-    }
-}
-
