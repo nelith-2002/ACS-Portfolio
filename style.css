@@ -1,3 +1,4 @@
+/* Global Styles */
 *{
     margin:0;
     padding: 0;
@@ -15,6 +16,7 @@ body {
 /* Typography */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Main Layout */
 .main{
     display: flex;
     justify-content: space-between;
@@ -30,6 +32,7 @@ body {
     color: #091937;
 }
 
+/* Header Styles */
 .header-text{
     flex: 1;
     margin-right: 20px;
@@ -38,6 +41,7 @@ body {
     padding: 50px;
 }
 
+/* Navigation Styles */
 nav{
     display: flex;
     align-items: center;
@@ -83,6 +87,7 @@ nav ul li a{
 
 /* ----button styles from Gradient.io---- */
 
+/* Button Styles */
 .btn-grad {
     background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
     margin: 10px;
@@ -193,7 +198,7 @@ nav ul li a{
     transform: scale(1.05);
 }
 
-
+/* Sidebar Styles */
 .sidebar{
     position: absolute;
     left: 2px;
@@ -253,8 +258,7 @@ nav ul li a{
 }
 
 
-
-/* -----about----- */
+/* About Section Styles */
 
 .about{
    padding-top: 40px; 
@@ -328,6 +332,7 @@ nav ul li a{
     align-items: flex-start;
 }
 
+/* Skills and Education Styles */
 .skills-container,
 .education-container {
     background-color: #091937;
@@ -402,8 +407,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-
-/* ----Projects & Blogs---- */
+/* Projects and Blogs Styles */
 
 .p_b_container {
     display: flex;
@@ -499,7 +503,32 @@ ul li {
 }
 
 
-/* ---contact--- */
+.media_container::before {
+    content: "⭐";
+    /* Star icon before the title */
+    font-size: 1.5em;
+    /* Adjust size as needed */
+    margin-right: 0.5em;
+    /* Space between the star and the text */
+    color: rgba(0, 119, 182, 1);
+    /* Change color as needed */
+}
+
+.blog_container::before {
+    content: "⭐";
+    /* Star icon before the title */
+    font-size: 1.5em;
+    /* Adjust size as needed */
+    margin-right: 0.5em;
+    /* Space between the star and the text */
+    color: rgba(0, 119, 182, 1);
+    /* Change color as needed */
+}
+
+
+
+/* Contact Form Styles */
+
 #contact {
     display: flex;
     justify-content: center;
@@ -640,6 +669,7 @@ input:invalid {
 
 
 /* ---media queries--- */
+/* Responsive Design */
 
 
 /* Tablet screens */
@@ -868,6 +898,8 @@ input:invalid {
 
 
 /* Attribute Selectors */
+
+/*Animation for main class in main page */
 a[target="_blank"] {
     color: #00adee;
 }
@@ -890,7 +922,7 @@ img[src*="logo"] {
     animation: fadeIn 1s ease-in-out;
 }
 
-
+/*Animation for logo class in main page */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -905,7 +937,7 @@ img[src*="logo"] {
     animation: fadeIn 1s ease-in-out;
 }
 
-
+/*Animation for footer */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -920,7 +952,7 @@ img[src*="logo"] {
     animation: fadeIn 1s ease-in-out;
 }
 
-
+/*Animation for nav bar */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -935,7 +967,7 @@ nav {
     animation: fadeIn 1s ease-in-out;
 }
 
-
+/*Animation for about class */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -951,7 +983,7 @@ nav {
 }
 
 
-
+/*Animation for contact section */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -968,7 +1000,7 @@ nav {
 
 
 
-
+/*Animation for Blog&Project page*/
 @keyframes fadeIn {
     from {
         opacity: 0;
