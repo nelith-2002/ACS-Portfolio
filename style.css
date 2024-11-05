@@ -149,10 +149,6 @@ nav ul li a{
     font-size:40px;
 }
 
-/* .header-text p span{
-    color: #091937;
-    text-shadow: 2px 2px 4px rgba(51, 51, 51, 0.7);
-} */
 
 .header-text h1 span {
     color: #091937;
@@ -306,10 +302,8 @@ nav ul li a{
    
 }
 
-/* .sub-title>span{
-    
-} */
 
+/* ---descendant selector--- */
 .about-col-2 >.sub-title>span{
     color: #091937;
 }
